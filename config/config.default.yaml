@@ -1,0 +1,25 @@
+mongo:
+  port: 27017
+  host: "localhost"
+  user: "admin"
+  password: "admin"
+  replicaSet:
+    -
+      host: "localhost"
+      port: 27018
+    -
+      host: "localhost"
+      port: 27019
+
+
+  auth: 'admin'
+
+server:
+  host: 'localhost'
+  port: 5000
+  ssl:
+    enable: false
+    options: {}
+
+  prefix: '/'
+
